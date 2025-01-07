@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Welcome Title -->
+        <TextView
+            android:id="@+id/welcomeTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Welcome to Our Home Page"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Section 1: About Us -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="About Us"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:layout_marginBottom="12dp" />
+
+        <TextView
+            android:id="@+id/aboutUsText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="We are a dedicated team committed to delivering the best solutions for your needs. With years of experience in the industry, we strive to make your life easier by offering reliable and efficient services."
+            android:textSize="16sp"
+            android:lineSpacingExtra="6dp"
+            android:textColor="@android:color/darker_gray"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Section 2: Features -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Key Features"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:layout_marginBottom="12dp" />
+
+        <TextView
+            android:id="@+id/featuresList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="• Easy-to-use interface for all users.\n• Fast and secure performance.\n• 24/7 customer support.\n• Comprehensive analytics and reports.\n• Regular updates with new features."
+            android:textSize="16sp"
+            android:lineSpacingExtra="6dp"
+            android:textColor="@android:color/darker_gray"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Section 3: Testimonials -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Testimonials"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:layout_marginBottom="12dp" />
+
+        <TextView
+            android:id="@+id/testimonial1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="“This platform has changed the way we work. It’s fast, reliable, and incredibly user-friendly!” – Jane Doe"
+            android:textSize="16sp"
+            android:lineSpacingExtra="6dp"
+            android:textColor="@android:color/darker_gray"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:id="@+id/testimonial2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="“Outstanding service and exceptional support. Highly recommend it to anyone looking for a great solution!” – John Smith"
+            android:textSize="16sp"
+            android:lineSpacingExtra="6dp"
+            android:textColor="@android:color/darker_gray"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Section 4: FAQ -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Frequently Asked Questions"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:layout_marginBottom="12dp" />
+
+        <TextView
+            android:id="@+id/faq1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Q: How can I get started?\nA: Simply sign up using your email, and you’ll be guided through the setup process."
+            android:textSize="16sp"
+            android:lineSpacingExtra="6dp"
+            android:textColor="@android:color/darker_gray"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:id="@+id/faq2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Q: Is my data secure?\nA: Yes, we use industry-standard encryption to keep your data safe and secure."
+            android:textSize="16sp"
+            android:lineSpacingExtra="6dp"
+            android:textColor="@android:color/darker_gray"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Section 5: Contact Us -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Contact Us"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:layout_marginBottom="12dp" />
+
+        <TextView
+            android:id="@+id/contactUsText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Email: support@example.com\nPhone: +1 234 567 890\nAddress: 123 Main Street, City, Country"
+            android:textSize="16sp"
+            android:lineSpacingExtra="6dp"
+            android:textColor="@android:color/darker_gray"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Explore Button -->
+        <Button
+            android:id="@+id/exploreButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Explore More"
+            android:textColor="@android:color/white"
+            android:padding="12dp"
+            android:textSize="16sp"
+            android:layout_marginTop="24dp" />
+
+    </LinearLayout>
+</ScrollView>

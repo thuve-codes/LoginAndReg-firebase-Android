@@ -1,0 +1,49 @@
+{
+  "project_info": {
+    "project_number": "634138340250",
+    "firebase_url": "https://realtimedb12345-default-rtdb.firebaseio.com",
+    "project_id": "realtimedb12345",
+    "storage_bucket": "realtimedb12345.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:634138340250:android:479634ada8287eddde6823",
+        "android_client_info": {
+          "package_name": "com.thuve.firebasesamp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA5x1CZho6UsRNUktNgr86ANRsjxZ34KWs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:634138340250:android:f1ba89414ca190e6de6823",
+        "android_client_info": {
+          "package_name": "com.thuve.firebasesampnew"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA5x1CZho6UsRNUktNgr86ANRsjxZ34KWs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
