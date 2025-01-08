@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -15,6 +16,7 @@ import com.google.firebase.database.FirebaseDatabase;
 public class SignupActivity extends AppCompatActivity {
 
     EditText name, email, password, cpassword;
+    TextView Logintxt;
     Button signup;
     FirebaseDatabase database;
     DatabaseReference myRef;
@@ -29,7 +31,11 @@ public class SignupActivity extends AppCompatActivity {
         email = findViewById(R.id.emailEditText);
         password = findViewById(R.id.passwordEditText);
         cpassword = findViewById(R.id.confirmPasswordEditText);
+
         signup = findViewById(R.id.signUpButton);
+
+        Logintxt=findViewById(R.id.loginText);
+
 
         signup.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -67,6 +73,15 @@ public class SignupActivity extends AppCompatActivity {
                         Toast.makeText(SignupActivity.this, "Signup Failed: " + task.getException().getMessage(), Toast.LENGTH_SHORT).show();
                     }
                 });
+            }
+        });
+
+        //Go to Login page if user already have account
+        Logintxt.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent =new Intent(SignupActivity.this, LoginActivity.class);
+                startActivity(intent);
             }
         });
     }

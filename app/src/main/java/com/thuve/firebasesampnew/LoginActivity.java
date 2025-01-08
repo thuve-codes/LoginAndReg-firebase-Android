@@ -26,7 +26,7 @@ public class LoginActivity extends AppCompatActivity {
     Button loginbtn;
     FirebaseDatabase database;
     DatabaseReference myRef;
-    TextView Errortxt;
+    TextView Errortxt,Regestertxt;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,7 +37,10 @@ public class LoginActivity extends AppCompatActivity {
         password = findViewById(R.id.passwordEditText);
 
         loginbtn = findViewById(R.id.loginButton);
+
         Errortxt = findViewById(R.id.Errortxt);
+        Regestertxt=findViewById(R.id.registerText);
+
 
         loginbtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -51,8 +54,17 @@ public class LoginActivity extends AppCompatActivity {
                 }
             }
         });
+
+        Regestertxt.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(LoginActivity.this, SignupActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 
+    //validate Email
     private boolean valemail(String email) {
         if (email.isEmpty()) {
             Errortxt.setText("Please Enter Email");
@@ -63,6 +75,7 @@ public class LoginActivity extends AppCompatActivity {
         }
     }
 
+    //Validate Password
     private boolean valpass(String password) {
         if (password.isEmpty()) {
             Errortxt.setText("Please Enter Password");
@@ -72,6 +85,9 @@ public class LoginActivity extends AppCompatActivity {
             return true;
         }
     }
+
+
+    //Note-Firebase DB Part
 
     private void checkuser(String email, String password) {
         DatabaseReference reference = FirebaseDatabase.getInstance().getReference("Users");
